@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Encriptador y Desencriptador de texto</title>
+</head>
+<body>
+    <header>
+        <nav class="navbanner">
+            <img class="banner-encabezado" src="./assets/Banner.png" alt="Banner Encriptador y Desencriptador de texto">
+        </nav>
+    </header>
+    <main>
+        <section class="contenedor-entrada">
+            <textarea class="text-area" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="info">
+                <img class="icono" src="./assets/info.png">
+                <p class="informacion">Solo letras minúsculas y sin acentos</p>
+            </div>
+
+            <div class="botones-ingresar-valores">
+                <button class="btn-encriptar" onclick="btnEncriptar()">🔐 Encriptar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">🔓 Desencriptar</button>
+            </div>
+        </section>
+        <section class="contenedor-salida">
+            <div class="inicio">
+                <img src="assets/Buscar.png" alt="">
+                <h3>No se encontró ningún mensaje</h3>
+                <p>Por favor ingresa el texto que deseas encriptar o desencriptar</p>
+            </div>
+            <div class="final">
+                <textarea class="mensaje" id="texto"></textarea>
+                <div class="botones-respuesta">
+                    <button class="btn-copiar" title="Copiar" onclick="btnCopiar()">📝</button>
+                    <button class="btn-limpiar" title="Limpiar" onclick="btnLimpiar()">🧹</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="piedepagina">
+            <p>🌹 Elaborado por: Alejandra Toloza®️🌹 | Alura Latam | ONE G7</p>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Ensure consistent box sizing */
+}
+
+:root {
+    --color-primario: #e6edfd;
+    --color-secundario: #4f1b6b;
+    --color-terciario: #233674;
+    --color-sombra-boton: #baeddf;
+    --color-hoover: #3088a8;
+    --color-blanco: #ffffff;
+
+    --fuente-verdana: Verdana, Geneva, Tahoma, sans-serif;
+    --fuente-lucia: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+    width: 100%;
+}
+
+body {
+    background-size: cover;
+    /* Cover the entire background */
+    background-repeat: no-repeat;
+    /* Prevent background repetition */
+    background-position: center center;
+    /* Center the background*/
+    background: url(./assets/Fondo.jpg);
+    color: var(--color-secundario);
+    display: flex;
+    /* Use flexbox for layout */
+    flex-direction: column;
+    /* Stack children vertically */
+    align-items: center;
+    /* Center content horizontally */
+    min-height: 100vh;
+    font-family: var(--fuente-verdana);
+}
+
+.navbanner {
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-encabezado {
+    width: 100%;
+    border-radius: 24px;
+    border-style: groove;
+}
+
+main {
+    display: flex;
+    width: 90%;
+    padding: 50px;
+    gap: 40px;
+}
+
+.contenedor-entrada {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.text-area {
+    padding: 10px;
+    width: 100%;
+    height: 350px;
+    background-color: var(--color-primario);
+    text-transform: lowercase;
+    border-radius: 14px;
+    border: 3px ridge var(--color-terciario);
+    border-style: outset;
+    resize: none;
+    font-family: var(--fuente-verdana);
+    font-size: medium;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.informacion {
+    font-family: var(--fuente-verdana);
+    font-weight: 100;
+    color: var(--color-blanco);
+    font-size: 14px;
+}
+
+.contenedor-salida {
+    width: 400px;
+    background-color: var(--color-primario);
+    border-radius: 14px;
+    border: 3px ridge var(--color-terciario);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+}
+
+.final {
+    width: 100%;
+    display: none;
+    height: 100%;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.mensaje {
+    outline: none;
+    resize: none;
+    padding: 10px;
+    font-family: var(--fuente-verdana);
+    font-size: medium;
+    height: 80%;
+    width: 100%;
+    border:none;
+    border-radius: 14px;
+}
+
+.botones-ingresar-valores button {
+    padding: 0.7rem;
+    width: 50%;
+}
+
+.botones-ingresar-valores {
+    display: flex;
+    gap: 24px;
+    font-family: var(--fuente-lucia);
+    justify-content: space-evenly;
+}
+
+.btn-encriptar, .btn-desencriptar {
+    width: 100%;
+    border-radius: 24px;
+    color: var(--color-blanco);
+    cursor: pointer;
+    box-shadow: 4px 2px 4px 0 var(--color-sombra-boton);
+    max-width: 328px;
+}
+
+.btn-encriptar {
+    background-color: var(--color-terciario);
+    border: 1px solid var(--color-terciario);
+}
+
+.btn-encriptar:hover {
+    background-color: var(--color-hoover);
+}
+
+.btn-desencriptar {
+    background-color: var(--color-secundario);
+    border: 1px solid var(--color-secundario);
+}
+
+.btn-desencriptar:hover {
+    background-color: var(--color-hoover);
+}
+
+.botones-respuesta {
+    margin-top: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.btn-copiar, .btn-limpiar {
+    background-color: var(--color-blanco);
+    font-size: 34px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid var(--color-sombra-boton);
+    box-shadow: 4px 2px 4px 0 var(--color-sombra-boton);
+    cursor: pointer;
+}
+
+.btn-copiar:hover, .btn-limpiar:hover {
+    background-color: var(--color-hoover);
+}
+
+footer {
+    margin-top: auto;
+}
+
+.piedepagina {
+    display: inline-grid;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+    font-size: 18px;
+    color: var(--color-blanco);
+    width: 100%;
+    border-radius: 12px;
+    border-style: groove;
+    background-color: #000;
+    border-color: var(--color-sombra-boton);
+    padding: 10px 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (width <=1024px) {
+    main {
+        flex-direction: column;
+    }
+
+    .contenedor-salida {
+        width: 100%;
+    }
+
+    .inicio img {
+        display: none;
+    }
+
+    .mensaje {
+        min-height: 100px;
+    }
+}
