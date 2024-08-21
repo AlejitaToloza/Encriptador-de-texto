@@ -1,20 +1,50 @@
 <h1>🔐 Encriptador y Desencriptador de Texto 🔓</h1>
 
-``Estado del proyecto: Finalizado``
+`Estado del proyecto: Finalizado`
 
->Este programa Encripta y Desencripta un texto.
->
-> 🗨️ Nota
->- ✔️ Es importante utilizar letras en minúscula y sin acentos.
->- ✔️ No se permite el ingreso de números o caracteres especiales.
+<h2>¡Bienvenidos a nuestro primer desafío!</h2>
 
-``Este proyecto fue realizado con VisualStudio Code --> Aprendiendo JavaScript``
+<p>Durante cuatro semanas se trabajó en una aplicación que encripta textos, de manera que es posible intercambiar mensajes secretos con otras personas que sepan el secreto de la encriptación utilizada.</p>
+<p>Las "llaves" de encriptación que utilizamos son las siguientes:</p>
+
+>- La letra "e" es convertida para "enter"
+>- La letra "i" es convertida para "imes"
+>- La letra "a" es convertida para "ai"
+>- La letra "o" es convertida para "ober"
+>- La letra "u" es convertida para "ufat"
+
+<h2>🗨️ Requisitos:</h2>
+
+> ✔️ Es importante utilizar letras en minúscula y sin acentos.
+> 
+> ✔️ No se permite el ingreso de números o caracteres especiales.
+> 
+> ✔️ Debe ser posible convertir una palabra para la versión encriptada también devolver una palabra encriptada para su versión original.
 
 
-Visita mi perfil en LinkedIn: https://www.linkedin.com/in/judy-toloza-ortiz/
+**Por ejemplo:**
 
-<p>Con el apoyo de Alura Latam | ONE G7 | ORACLE</p>
+`"gato" => "gaitober"`
 
+`gaitober" => "gato"`
+
+☑️ La página tiene campos para inserción del texto que será encriptado o desencriptado, y el usuario puede escoger entre las dos opciones.
+
+☑️ El resultado será mostrado en la pantalla.
+
+**Extras:**
+
+* Contiene un botón que **Copia** el texto *Encriptado/Desencriptado* para la sección de transferencia, este botón tiene la misma funcionalidad del `Ctrl+C` o de la opción `Copiar` del menú de las aplicaciones.
+* Contiene un botón que **Limpia** la sección del texto *Encriptado/Desencriptado*.
+
+_`Este proyecto fue realizado con VisualStudio Code --> Aprendiendo JavaScript`_
+
+
+* Con el apoyo de [`Alura Latam`](https://app.aluracursos.com/dashboard) | [`ORACLE`](https://www.oracle.com/) | `ONE G7`
+
+***Visita mi perfil en LinkedIn: [Alejandra Toloza](https://www.linkedin.com/in/judy-toloza-ortiz/)***
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 <h1>Presentación pantalla principal</h1>
 <p>Al abrir la aplicación se presenta la página principal.</p>
 
@@ -54,4 +84,6 @@ Visita mi perfil en LinkedIn: https://www.linkedin.com/in/judy-toloza-ortiz/
 
 ![Screenshot 2024-08-20 121909](https://github.com/user-attachments/assets/86f614ff-efb1-49d4-a4d2-b1b1d0b727d2)
 
+
+* App Deployed: [Encriptador de texto](https://encriptador-de-texto-sooty-eta.vercel.app/)
 <h2>Desarrollado por: Alejandra Toloza®️</h2>
